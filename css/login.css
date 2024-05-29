@@ -1,0 +1,136 @@
+:root {
+    --primary-light: #ffffff;
+    --primary-dark: #000000;
+    --black: #000000;
+    --white: #efefef;
+    --yellow: #ffc201;
+    --lightwhite: #d8d2d29d;
+    --whitesmoke: whitesmoke;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none !important;
+}
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    padding:20px 30px;
+    background: var(--primary-light);
+    border-radius:10px;
+    width: 500px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login h2{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    }
+.form-control{
+    height: 38px;
+    margin-bottom: 10px;
+    width:100%;
+}
+.form-control5{
+    height: 38px;
+    margin-bottom: 10px;
+    width:100%;
+}
+.labels{
+    margin-bottom:5px;
+}
+.form-group1{
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.form-group input[type=text],
+.form-group input[type=password],
+.form-group1 input[type=text],
+.form-group1 input[type=password]{
+    padding-left:43px;
+}
+.form-group #regs{
+    position: absolute;
+    width: 40px;
+    background-color: transparent;
+    padding:18.5px 0px;
+    color:var(--black);
+}
+.form-group1 #ics{
+    position: absolute;
+    width: 40px;
+    background-color: transparent;
+    margin-top: 1px;
+    margin-left: 1px;
+    padding:18px 0;
+    color:var(--black);
+}
+.form-group1 #ics1{
+    position: absolute;
+    width: 40px;
+    background-color: transparent;
+    margin-top: 1px;
+    margin-left: 1px;
+    padding:18px 0;
+    color:var(--black);
+}
+
+.form-group input[type=text]:focus + .fas,
+.form-group input[type=password]:focus + .fas{
+    color:var(--black);
+    background: var(--whitesmoke);
+}
+.form-group1 input[type=text]:focus + .fas,
+.form-group1 input[type=password]:focus + .fas{
+    color:var(--whitesmoke);
+    background: var(--black);
+}
+.form-group2{
+    margin-bottom: 10px;
+}
+.form-group3 a,
+.form-group2 a{
+    color:var(--yellow);
+    font-weight: 700;
+}
+.login .btnSubmit{
+    font-weight: 600;
+    color: var(--primary-light);
+    background-color: var(--black);
+    width: 100%;
+    height:45px;
+    font-size:18px;
+    margin-top:10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+#show{
+    margin-left:-40px;
+    width:40px;
+    height:38px;
+    cursor:pointer;
+    border:none;
+    background:none;
+}
+#hide{
+    margin-left:-40px;
+    width:40px;
+    height:38px;
+    cursor:pointer;
+    border:none;
+    background:none;
+}

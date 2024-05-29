@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction | Dani's Catering and Events</title>
+    <link rel="icon" type="image/png" href="images/danis-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/transaction.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src = "./images/danis-logo.png" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                </li>
+                <li id = "mobile" class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./transaction.html">Transaction</a>
+                </li>
+                <li id = "mobile" class="nav-item">
+                    <a class="nav-link" href="./profile.html">Profile</a>
+                </li>
+                <li id = "prof" class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item active" href="transaction.html">Transaction</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--<div class="no-transaction">
+        <img src="images/transaction.png"/>
+        <button type = "button" class="btn" onclick="window.location.href='services.html'"><i class = "fa fa-plus"></i> New Reservation</button>
+    </div>-->
+    <section class="transaction">
+        <div class="transaction-container">
+            <div class="transaction-header"><h4>Transactions</h4></div>
+            <div class="transaction-content container">
+                <div class="transaction-item">
+                    <div class="transaction-number">
+                        <h4>Transaction #: 0923242323232</h4>
+                    </div>
+                    <div class="transaction-item-content">
+                        <h5>Package: Wedding Package 1</h5>
+                        <div class="transaction-addons">
+                            <h5>Addons:</h5>
+                            <div class="transaction-addons-item">
+                                <p class="item-image"><img src="images/FriendChicken.png"/></p>
+                                <p class="item-name">Fried Chicken</p>
+                                <p class="item-price">₱ 450.00</p>
+                                <p class="item-quantity">x2</p>
+                                <p class="totals">₱ 900.00</p>
+                            </div>
+                            <div class="transaction-addons-item">
+                                <p class="item-image"><img src="images/Chairs.png"/></p>
+                                <p class="item-name">Round Table With Tiffany Chairs (10 Pax)</p>
+                                <p class="item-price">₱ 700.00</p>
+                                <p class="item-quantity">x2</p>
+                                <p class="totals">₱ 1,400.00</p>
+                            </div>
+                            <div class="transaction-addons-details">
+                                <div class="details">
+                                    <p class="total-bill">Total Bill:</p>
+                                    <p class="total-bill">₱ 200,000.00</p>
+                                </div>
+                                <div class="details">
+                                    <p>Transaction Date:</p>
+                                    <p>04/03/2024</p>
+                                </div>
+
+                                <div class="details">
+                                    <p>Date Use:</p>
+                                    <p>04/03/2024</p>
+                                </div>
+
+                                <div class="details">
+                                    <p>Location/Venue:</p>
+                                    <p>Bacoor City, Cavite </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="transaction-number">
+                        <h4>Transaction #: 0923242323232</h4>
+                    </div>
+                    <div class="transaction-item-content">
+                        <h5>Package: Wedding Package 1</h5>
+                        <div class="transaction-addons">
+                            <h5>Addons:</h5>
+                            <div class="transaction-addons-item">
+                                <p class="item-image"><img src="images/FriendChicken.png"/></p>
+                                <p class="item-name">Fried Chicken</p>
+                                <p class="item-price">₱ 450.00</p>
+                                <p class="item-quantity">x2</p>
+                                <p class="totals">₱ 900.00</p>
+                            </div>
+                            <div class="transaction-addons-item">
+                                <p class="item-image"><img src="images/Chairs.png"/></p>
+                                <p class="item-name">Round Table With Tiffany Chairs (10 Pax)</p>
+                                <p class="item-price">₱ 700.00</p>
+                                <p class="item-quantity">x2</p>
+                                <p class="totals">₱ 1,400.00</p>
+                            </div>
+                            <div class="transaction-addons-details">
+                                <div class="details">
+                                    <p class="total-bill">Total Bill:</p>
+                                    <p class="total-bill">₱ 200,000.00</p>
+                                </div>
+                                <div class="details">
+                                    <p>Transaction Date:</p>
+                                    <p>04/03/2024</p>
+                                </div>
+
+                                <div class="details">
+                                    <p>Date Use:</p>
+                                    <p>04/03/2024</p>
+                                </div>
+
+                                <div class="details">
+                                    <p>Location/Venue:</p>
+                                    <p>Bacoor City, Cavite </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="mt-auto">
+        <div class="footer-container">
+            <div class="footer-item">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p>Contact Info</p>
+            </div>
+            <div class="footer-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Binãn Laguna</p>
+            </div>
+            <div class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+                <p>0930-094-3079</p>
+            </div>
+            <div class="footer-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>eventconsultants.dce@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dani's Catering & Events. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package | Dani's Catering and Events</title>
+    <link rel="icon" type="image/png" href="images/danis-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/package.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src = "./images/danis-logo.png" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"aria-current="page" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                </li>
+                <li id = "mobile" class="nav-item">
+                    <a class="nav-link" href="./transaction.html">Transaction</a>
+                </li>
+                <li id = "mobile" class="nav-item">
+                    <a class="nav-link" href="./profile.html">Profile</a>
+                </li>
+                <li id = "prof" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="transaction.html">Transaction</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="package container-fluid">
+        <div class="package-container container">
+            <div class="card">
+                <img src = "images/service1.png" class="img-fluid"/>
+                <div class="card-body">
+                    <h5 class="card-title">Wedding Package 1</h5>
+                    <p class="card-text">₱ 129,000.00</p>
+                    <div class="services-btn">
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#detailsModal">VIEW DETAILS</button>
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#packageModal">ADD PACKAGE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src = "images/service2.png" class="img-fluid"/>
+                <div class="card-body">
+                    <h5 class="card-title">Wedding Package 2</h5>
+                    <p class="card-text">₱ 149,000.00</p>
+                    <div class="services-btn">
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#detailsModal">VIEW DETAILS</button>
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#packageModal">ADD PACKAGE</button>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="card">
+                <img src = "images/service2.png" class="img-fluid"/>
+                <div class="card-body">
+                    <h5 class="card-title">Wedding Package 2</h5>
+                    <p class="card-text">₱ 149,000.00</p>
+                    <div class="services-btn">
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#detailsModal">VIEW DETAILS</button>
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#packageModal">ADD PACKAGE</button>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="card">
+                <img src = "images/service2.png" class="img-fluid"/>
+                <div class="card-body">
+                    <h5 class="card-title">Wedding Package 2</h5>
+                    <p class="card-text">₱ 149,000.00</p>
+                    <div class="services-btn">
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#detailsModal">VIEW DETAILS</button>
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#packageModal">ADD PACKAGE</button>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="card">
+                <img src = "images/service2.png" class="img-fluid"/>
+                <div class="card-body">
+                    <h5 class="card-title">Wedding Package 2</h5>
+                    <p class="card-text">₱ 149,000.00</p>
+                    <div class="services-btn">
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#detailsModal">VIEW DETAILS</button>
+                        <button type = "button" class="btn" data-bs-toggle="modal" data-bs-target="#packageModal">ADD PACKAGE</button>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="packageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Wedding Package 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Our Services</h4>
+                        <div class="package-modal-container">
+                            <h5>Customization</h5>
+                            <div class="package-modal-container-items">
+                                <div class="modal-packages-item">
+                                    <input type="checkbox" id="pack-item-1" class="form-check-input package-checkbox" name="package-item">
+                                    <label for="pack-item-1" class="form-check-label">
+                                        <img src="images/FriendChicken.png" class="img-fluid">
+                                        <p>Fried Chicken</p>
+                                        <div class="package-modal-button">
+                                            <button type="button" id="minus1" class="btn" disabled>-</button>
+                                            <input id="itemnumber1" class="form-control" type="text" value="0" disabled>
+                                            <button type="button" id="plus1" class="btn" disabled>+</button>
+                                        </div>
+                                    </label>
+                                </div>
+                            
+                                <div class="modal-packages-item">
+                                    <input type="checkbox" id="pack-item-2" class="form-check-input package-checkbox" name="package-item">
+                                    <label for="pack-item-2" class="form-check-label">
+                                        <img src="images/Chairs.png" class="img-fluid">
+                                        <p>Round Table With Tiffany Chairs (10 Pax)</p>
+                                        <div class="package-modal-button">
+                                            <button type="button" id="minus2" class="btn" disabled>-</button>
+                                            <input id="itemnumber2" class="form-control" type="text" value="0" disabled>
+                                            <button type="button" id="plus2" class="btn" disabled>+</button>
+                                        </div>
+                                    </label>
+                                </div>
+                            
+                                <div class="modal-packages-item">
+                                    <input type="checkbox" id="pack-item-3" class="form-check-input package-checkbox" name="package-item">
+                                    <label for="pack-item-3" class="form-check-label">
+                                        <img src="images/Chairs.png" class="img-fluid">
+                                        <p>Round Table With Tiffany Chairs (10 Pax)</p>
+                                        <div class="package-modal-button">
+                                            <button type="button" id="minus3" class="btn" disabled>-</button>
+                                            <input id="itemnumber3" class="form-control" type="text" value="0" disabled>
+                                            <button type="button" id="plus3" class="btn" disabled>+</button>
+                                        </div>
+                                    </label>
+                                </div>
+                                                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id = "cancel" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id = "add" type="button" class="btn" onclick="window.location.href='checkout.html'">CONFIRM</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="detailsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Wedding Package 1</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <h4>Inclusions:</h4>
+            <p>
+                Main Dishes: Beef, Chicken, Fish, Pasta, Dessert & Steamed Rice<br>
+                Service bar with juice/iced tea and water<br>
+                Uniformed waiters<br>
+                Uniformed buffet controllers<br>
+                Elegant Stage Set Up with stage platform<br>
+                Thematic entrance arch<br>
+                Souvenir, cake table & gift table<br>
+                Registration area<br>
+                Red carpet or brown carpet<br>
+                Flower arrangement for table centerpieces (VIP’s & Guest Tables)<br>
+                Tables and chairs (Tiffany chairs with high quality linen cover);<br>
+                Buffet table with complex setup (Roll top chaffing dishes, food lamp), etc<br><br>
+                Includes:<br><br>
+
+                Professional Host<br>
+                Professional OTD Coordinators<br>
+                Free: Overflowing Brewed Coffee<br>
+                Note: Transportation fee is not included
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button id = "cancel" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to update the input value
+        function updateValue(inputElement, change) {
+            let currentValue = parseInt(inputElement.value, 10);
+            if (isNaN(currentValue)) {
+                currentValue = 0;
+            }
+            currentValue += change;
+            if (currentValue < 0) {
+                currentValue = 0;
+            }
+            inputElement.value = currentValue;
+        }
+
+        // Function to toggle button states
+        function toggleButtons(checkbox, index) {
+            const minusButton = document.getElementById(`minus${index}`);
+            const plusButton = document.getElementById(`plus${index}`);
+            const inputElement = document.getElementById(`itemnumber${index}`);
+            const isDisabled = !checkbox.checked;
+            minusButton.disabled = isDisabled;
+            plusButton.disabled = isDisabled;
+            inputElement.disabled = isDisabled;
+        }
+
+        // Attach event listeners to all plus and minus buttons
+        document.querySelectorAll('[id^="plus"]').forEach(button => {
+            button.addEventListener('click', function() {
+                const index = this.id.replace('plus', '');
+                const inputElement = document.getElementById(`itemnumber${index}`);
+                updateValue(inputElement, 1);
+            });
+        });
+
+        document.querySelectorAll('[id^="minus"]').forEach(button => {
+            button.addEventListener('click', function() {
+                const index = this.id.replace('minus', '');
+                const inputElement = document.getElementById(`itemnumber${index}`);
+                updateValue(inputElement, -1);
+            });
+        });
+
+        // Attach event listeners to all checkboxes
+        document.querySelectorAll('.package-checkbox').forEach((checkbox, index) => {
+            checkbox.addEventListener('change', function() {
+                toggleButtons(this, index + 1);
+            });
+        });
+
+        // Initialize button states based on the initial checkbox states
+        document.querySelectorAll('.package-checkbox').forEach((checkbox, index) => {
+            toggleButtons(checkbox, index + 1);
+        });
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-item">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Contact Info</p>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Binãn Laguna</p>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>0930-094-3079</p>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>eventconsultants.dce@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Dani's Catering & Events. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

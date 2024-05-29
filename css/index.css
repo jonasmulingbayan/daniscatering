@@ -1,0 +1,186 @@
+:root {
+    --primary-light: #ffffff;
+    --primary-dark: #000000;
+    --black: #000000;
+    --white: #efefef;
+    --yellow: #ffc201;
+    --lightwhite: #d8d2d29d;
+    --whitesmoke: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-banner{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/home5.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-banner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.home-banner-container h2{
+    text-align: center;
+    font-size:60px;
+    color: var(--yellow);
+}
+.home-banner-container p{
+    text-align: center;
+    color:var(--white);
+    font-size: 18px;
+}
+.home-banner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.home-banner-container .btn{
+    width: 170px;
+    font-size:22px;
+    font-weight: 600;
+}
+.home-banner-container .services-btn{
+    border: 2px solid var(--yellow);
+    background: var(--yellow);
+    color:var(--black);
+}
+
+.home-banner-container .services-btn:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+    background: var(--yellow);
+    color:var(--black);
+}
+
+.home-banner-container .about-btn{
+    border: 2px solid var(--yellow);
+    color:var(--yellow);
+}
+
+.home-banner-container .about-btn:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+    border: 2px solid var(--yellow);
+    color:var(--yellow);
+}
+.home{
+    padding: 50px 0 60px 0;
+}
+
+.carousel-item img{
+    border-radius: 10px;
+}
+.carousel button .carousel-control{ 
+    color:var(--black);
+    font-size:50px;
+}
+
+.carousel button .carousel-control i{ 
+    color:var(--yellow);
+}
+
+
+.services{
+    margin-bottom: 50px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.services h2{
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 2px solid var(--black);
+    text-decoration: none;
+    border-radius: 10px;
+    width: 301px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    border-bottom: 2px solid var(--black);
+    transition: 0.3s;
+}
+
+.card img:hover{
+    transform: scale(1.02);
+}
+.card h5{
+    text-align: center;
+    font-weight: 700;
+}
+.card .btn{
+    background: var(--black);
+    color: var(--yellow);
+    width: 100%;
+}
+
+@media(max-width:991px){
+    .home-banner-container h2{
+        font-size:45px;
+    }
+}
+
+@media(max-width:767px){
+    .home-banner-container h2{
+        font-size:30px;
+    }
+    .home-banner-container p{
+        font-size: 16px;
+    }
+    .home-banner-container .btn{
+        width: 170px;
+        font-size:18px;
+    }
+}
+
+@media(max-width:600px){
+    .home{
+        padding: 30px 15px 60px 15px;
+    }
+    .services-container {
+        justify-content: center;
+    }
+    .card {
+        width: 350px;
+    }
+    .services h2{
+        text-align: center;
+    }
+}
+
+@media(max-width:500px){
+    .home-banner{
+        padding: 20px 15px;
+    }
+    .home-banner-container h2{
+        font-size:23px;
+    }
+    .home-banner-container p{
+        font-size: 14px;
+    }
+    .home-banner-container .btn{
+        width: 130px;
+        font-size:15px;
+    }
+}

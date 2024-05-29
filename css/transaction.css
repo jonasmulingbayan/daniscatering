@@ -1,0 +1,170 @@
+:root {
+    --primary-light: #ffffff;
+    --primary-dark: #000000;
+    --black: #000000;
+    --white: #efefef;
+    --yellow: #ffc201;
+    --lightwhite: #d8d2d29d;
+    --whitesmoke: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transaction {
+    padding: 150px 30px 60px 30px;
+}
+
+.no-transaction{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.no-transaction img{
+    width: 400px;
+}
+.no-transaction .btn:focus,
+.no-transaction .btn:hover,
+.no-transaction .btn{
+    background: var(--black);
+    color: var(--yellow);
+}
+
+
+
+.transaction-header{
+    padding:10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+
+
+.transaction-item{
+    padding:20px;
+    border:2px solid var(--black);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.transaction-item p{
+    margin:0;
+}
+.transaction-addons-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    width: 100%;
+    margin-bottom:20px;
+}
+.transaction-addons-item .item-image{
+    width: 20%;
+}
+.transaction-addons-item img{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+.transaction-addons-item .item-name{
+    width: 35%;
+    text-align: left;
+}
+.transaction-addons-item .item-price{
+    width: 15%;
+    text-align: left;
+}
+.transaction-addons-item .item-quantity{
+    width: 15%;
+    text-align: center;
+}
+.transaction-addons-item .totals{
+    width: 15%;
+    text-align: right;
+}
+
+.transaction-addons-details .details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-bill,
+.totals{
+    font-weight: 600;
+}
+@media(max-width:850px){
+    .transaction{
+        padding: 150px 15px 60px 15px;
+    }
+}
+@media(max-width:767px){
+    .transaction-addons-item .item-image{
+        width: 15%;
+    }
+    .transaction-addons-item img{
+        height: 50px;
+        width: 50px;
+    }
+    .transaction-addons-item .item-name{
+        width: 35%;
+    }
+    .transaction-addons-item .item-price{
+        width: 20%;
+    }
+    .transaction-addons-item .item-quantity{
+        width: 10%;
+    }
+    .transaction-addons-item .totals{
+        width: 20%;
+    }
+}
+@media(max-width:540px){
+    .transaction{
+        padding: 120px 10px 40px 10px;
+    }
+
+    .transaction-number h4{
+        font-size:18px;
+    }
+    .transaction-item-content h5{
+        font-size:16px;
+    }
+    .transaction-item-content p{
+        font-size:13px;
+    }
+    .transaction-addons-item img{
+        height: 40px;
+        width: 40px;
+    }
+    .transaction-addons-item{
+        flex-direction: column;
+        gap:0;
+    }
+    .transaction-addons-item .item-image{
+        width: 100%;
+    }
+    .transaction-addons-item .item-name{
+        width: 100%;
+        text-align: left;
+    }
+    .transaction-addons-item .item-price{
+        width: 100%;
+        text-align: left;
+    }
+    .transaction-addons-item .item-quantity{
+        text-align: left;
+        width: 100%;
+    }
+    .transaction-addons-item .totals{
+        text-align: left;
+        width: 100%;
+    }
+}

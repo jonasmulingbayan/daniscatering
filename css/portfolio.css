@@ -1,0 +1,41 @@
+:root {
+    --primary-light: #ffffff;
+    --primary-dark: #000000;
+    --black: #000000;
+    --white: #efefef;
+    --yellow: #ffc201;
+    --lightwhite: #d8d2d29d;
+    --whitesmoke: whitesmoke;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.portfolio{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:150px 30px 50px 30px;
+}
+
+.portfolio-container{
+    display: flex;
+    justify-content: flex-start;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.portfolio-container img{
+    width:400px;
+    border-radius: 10px;
+    border:2px solid var(--black);
+}
+
+.portfolio-container img:hover{
+    border:2px solid var(--yellow);
+}
