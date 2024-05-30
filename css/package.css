@@ -84,6 +84,10 @@
 }
 
 
+#packageModal form{
+    background: var(--primary-light);
+}
+
 .package-modal-container-items{
     display: flex;
     justify-content: space-between;

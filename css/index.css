@@ -94,7 +94,7 @@
 
 
 .services{
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .services-container {
@@ -135,9 +135,9 @@
     width: 100%;
 }
 
-
-.contact-form-container{
-    padding: 30px 0 70px 0;
+.contact-form{
+    background: #eeecec;
+    padding: 50px 0 50px 0;
 }
 .contact-form-container{
     display: flex;
@@ -179,6 +179,9 @@
 
 .contact-forms{
     width: 100%;
+}
+.contact-forms p{
+    font-size:18px;
 }
 .contact-forms label{
     font-size:20px;
@@ -262,7 +265,7 @@
     }
 
 
-    .contact-form-container{
+    .contact-form{
         padding: 30px 15px 70px 15px;
     }
 
@@ -274,6 +277,9 @@
     }
 
     .contact-forms label{
+        font-size:16px;
+    }
+    .contact-forms p{
         font-size:16px;
     }
 
