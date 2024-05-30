@@ -136,7 +136,7 @@
 }
 
 .contact-form{
-    background: #eeecec;
+    background: var(--whitesmoke);
     padding: 50px 0 50px 0;
 }
 .contact-form-container{
@@ -199,6 +199,8 @@
 
 .contact-forms textarea{
     border:1px solid var(--black);
+    min-height: 100px;
+    max-height: 300px;
 }
 
 .contact-forms textarea:focus,
