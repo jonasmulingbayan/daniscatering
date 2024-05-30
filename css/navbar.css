@@ -103,39 +103,7 @@ footer{
     background: var(--black);
     padding: 15px;
 }
-.footer-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 5px 15px 5px;
-}
-.footer-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    color: var(--yellow);
-}
 
-.footer-item a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:10px;
-    text-decoration: none;
-    color:var(--yellow);
-}
-.footer-item i{
-    font-size:22px;
-    margin-bottom: 0;
-}
-.footer-item p{
-    margin:0;
-}
-.footer-bottom{
-    padding: 10px 0 0 0;
-    border-top:1px solid var(--primary-light);
-}
 .footer-bottom p{
     color: var(--yellow);
     margin: 0;
