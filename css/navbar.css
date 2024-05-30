@@ -116,6 +116,15 @@ footer{
     gap:10px;
     color: var(--yellow);
 }
+
+.footer-item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    text-decoration: none;
+    color:var(--yellow);
+}
 .footer-item i{
     font-size:22px;
     margin-bottom: 0;

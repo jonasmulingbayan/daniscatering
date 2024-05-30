@@ -162,6 +162,13 @@
     border-radius: 0;
     text-align: center;
 }
+input[type="checkbox"]:focus{
+    box-shadow: none !important;
+}
+input[type="checkbox"]:checked {
+    border:1px solid var(--black) !important;
+    color:var(--yellow);
+}
 
 .package-modal-button input:focus{
     box-shadow: none !important;
